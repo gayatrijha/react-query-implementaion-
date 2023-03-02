@@ -1,0 +1,13 @@
+useQuery- READ
+
+UseMutaionHook--
+UseMutaion- Create, Update, Del.
+
+
+const addData= (data)=>{
+    return axios.post('url', data);
+}
+
+export const useAddData= ()=>{
+    return UseMutaion(addData);
+}   
